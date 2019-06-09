@@ -3,7 +3,7 @@
 ## userテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false|
+|name|string|null: false, add_index :usere, [:name, :email]|
 |email|string|null: false|
 |password|string|null: false|
 |user_id|string|null: false, foreign_key: true|
