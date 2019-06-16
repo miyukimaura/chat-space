@@ -9,7 +9,6 @@
 |user_id|string|null: false, foreign_key: true|
 |group_id|string|null: false, foreign_key: true|
 |member_id||user_id|string|null: false, foreign_key: true|
-|group_id|string|null: false, foreign_key: true|
 
 ### Association
 - has_many :messages
