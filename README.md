@@ -24,6 +24,7 @@
 |user_id|string|null: false, foreign_key: true|
 |group_id|string|null: false, foreign_key: true|
 
+
 ### Association
 - belong_to :user
 - belong_to :group
