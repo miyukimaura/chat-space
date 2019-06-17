@@ -38,7 +38,7 @@
 - has_many :users, through: members
 
 
-## group_usersテーブル
+## membersテーブル
 |Column|Type|Options|
 |------|----|-------|
 |user|references|null: false, foreign_key: true|
