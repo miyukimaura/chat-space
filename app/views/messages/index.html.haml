@@ -1,0 +1,79 @@
+.flash-box
+.wrapper
+
+  .side-bar
+    .header
+      %h3.header__name
+        名前
+      %ul.header__lists
+        %li.list
+          =link_to "https://chat-space-sample.herokuapp.com/groups/new", class: "Contents__btn Contents__btn--edit" do
+            = fa_icon 'edit', class: "Contents__btn--icon"
+        %li.list
+          =link_to "https://chat-space-sample.herokuapp.com/users/739/edit", class: "Contents__btn Contents__btn--cog" do
+            = fa_icon 'cog', class: "Contents__btn--icon"
+    .groups
+      .group
+        .group__name
+          グループ１
+        .group__message
+          今日は晴れ
+      .group
+        .group__name
+          グループ2
+        .group__message
+          明日も晴れ
+      .group
+        .group__name
+          グループ3
+        .group__message
+          晴れの日に遊びたい
+      .group
+        .group__name
+          グループ4
+        .group__message
+          ディズニー行きたい
+
+  .main
+    .header
+      .left-header
+        .left-header__title
+          グループ１
+        %ul.left-header__members
+          Member：
+          %li.member
+            メンバー1
+          %li.member
+            メンバー2
+      .right-header
+        .right-header__button
+          Edit
+    .messages
+      .message
+        .message-message
+          .message-message__user-name
+            メンバー１
+          .message-message__date
+            2019/07/07
+        .message-text
+          .message-text-content
+            メッセージ
+      .message
+        .message-message
+          .message-message__user-name
+            メンバー２
+          .message-message__date
+            2019/07/08
+        .message-text
+          .message-text-content
+            メッセージ
+
+    .form
+      %form
+        %input.form__message
+        .form__mask
+          %label.form__mask__image
+            = fa_icon 'picture-o', class: 'icon'
+            %input.hidden{type: 'file'}
+        %input.form__submit{type: 'submit', value: 'Send'}
+
