@@ -1,0 +1,137 @@
+.main-content{
+  width: calc(100% - 300px);
+  height: 100vh;
+  background-color:rgb(248, 248, 248);
+  float: right;
+  &__header{
+    height: 100px;
+    background-color: white;
+    padding: 0 40px;
+    display: flex;
+    &__left-box{
+      margin-top: 35px;
+    }
+      .current-group{
+        float: left;
+        line-height: 100px;
+        font-size: 20px;
+        letter-spacing: 2px;
+        color:#000000;
+      }
+      .member-list{
+        float: left;
+        font-size: 12px;
+        color:gray;
+        text-align:left;
+        position: absolute;
+        padding-top: 80px;
+      }
+    }
+    .main-content__edit-btn{
+      height: 40px;
+      width: 50px;
+      display: inline-block;
+      background-color: skyblue;
+      margin: 30px;
+      text-align: center;
+      line-height: 40px;
+      padding: 0 20px;
+      position: absolute;
+      right: 40px;
+    }
+  }
+.messages{
+  height: calc(100vh - 280px);
+  padding: 46px 40px;
+  .message_id{
+
+    .message_member{
+      font-size: 16px;
+      letter-spacing: 2px;
+      font-weight: bold;
+      padding-bottom: 10px;
+    }
+    .message_message{
+      font-size: 14px;
+      letter-spacing: 2px;
+      margin-bottom: 40px;
+    }
+    .message_member2{
+      font-size: 16px;
+      letter-spacing: 2px;
+      font-weight: bold;
+      padding-bottom: 10px;
+    }
+    .message_message2{
+      font-size: 14px;
+      letter-spacing: 2px;
+      margin-bottom: 40px;
+    }
+    .message_member3{
+      font-size: 16px;
+      letter-spacing: 2px;
+      font-weight: bold;
+      padding-bottom: 10px;
+    }
+    .message_message3{
+      font-size: 14px;
+      letter-spacing: 2px;
+      margin-bottom: 40px;
+    }
+  }
+}
+.form{
+  height: 50px;
+  width: calc(100% - 300px);
+  background-color: lightgray;
+  position: fixed;
+  padding: 20px 40px;
+  .new_message{
+    height: 50px;
+    width: 580px;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    .input-box{
+      background-color: white;
+      height: 50px;
+      width: 100%;
+      position: relative;
+      .input_box__text{
+        height: 50px;
+        width: 100%;
+        padding: 0 40px 0 10px;
+        color: #434a54;
+        border-style: none;
+      }
+      .input-box__icons{
+        font-size: 1.3rem;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        box-sizing: border-box;
+      }
+        .fa_fa-image{
+          color: #000;
+        .input-box__image__file{
+          font-family: inherit;
+          font-size: inherit;
+          font-weight: inherit;
+      .submit-btn{
+        height: 50px;
+        width: 100px;
+        padding: 0 30px;
+        margin-left: 15px;
+        background-color: #38aef0;
+        color: white;
+        cursor: pointer;
+        display: inline-block;
+      }
+    }
+  }
+}
+    }
+  }
+
+
