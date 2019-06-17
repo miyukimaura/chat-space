@@ -1,39 +1,12 @@
-<<<<<<< HEAD
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-=======
-## DB設計
-## userテーブル
+## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false|
+|name|string|null: false, index: true|
 |email|string|null: false|
 |password|string|null: false|
-|user_id|string|null: false, foreign_key: true|
-|group_id|string|null: false, foreign_key: true|
-|member_id||user_id|string|null: false, foreign_key: true|
+|user|references|null: false, foreign_key: true|
+|group_id|references|null: false, foreign_key: true|
+|member_id|references|null: false, foreign_key: true|
 
 ### Association
 - has_many :messages
@@ -41,19 +14,17 @@ Things you may want to cover:
 - has_many :groups through: :members
 
 
->>>>>>> 5cfa6e2280db2bd1fa66f400df0f8c469867ba43
-## messageテーブル
+## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
 |body|string|
 |image|string|
-|user_id|string|null: false, foreign_key: true|
-|group_id|string|null: false, foreign_key: true|
+|user|references|null: false, foreign_key: true|
+|group_id|references|null: false, foreign_key: true|
 
 ### Association
 - belong_to :user
 - belong_to :group
-
 
 
 ## groupsテーブル
@@ -67,11 +38,11 @@ Things you may want to cover:
 - has_many :users, through: members
 
 
-## membersテーブル
+## group_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
+|user|references|null: false, foreign_key: true|
+|group_id|references|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :group
