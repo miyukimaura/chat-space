@@ -1,0 +1,8 @@
+module ControllerMacros
+  def login(user)
+    @request.env["devise.mapping"] = Devise.mapping[:user]
+    sign_in user
+  end
+end
+
+#ログインメソッドを定義した
